@@ -1,15 +1,14 @@
-﻿# Data and Artifact Boundary
+# Data and Artifact Boundary
 
 This repository is organized as a lightweight public package for manuscript revision traceability.
 
 ## Included
 
-- Source scripts for the MI-PINN/PINN workflow, baselines, revision studies, and COMSOL follow-up.
+- Source scripts for the MI-PINN/PINN workflow, baseline checks, and COMSOL long-window follow-up.
 - Google Drive link files for the single-cylinder and three-cylinder raw benchmark data.
-- A Google Drive link placeholder and checksum record for the additional revision-experiment data package.
-- Compact benchmark outputs and summary metrics.
-- Selected model checkpoints and compact prediction files where practical.
-- Figures, CSV summaries, logs, and scripts used in the revision evidence.
+- A verified Google Drive link and checksum record for the additional revision-experiment data package.
+- Compact COMSOL long-window outputs and pseudo-label ablation summary files.
+- Supplementary figures, CSV summaries, logs, and scripts used in the directly included revision evidence.
 - Supplementary COMSOL long-window PDF and LaTeX source.
 - Manifest files documenting included and excluded server-side artifacts.
 
@@ -19,11 +18,11 @@ The following artifacts are intentionally excluded to avoid making the repositor
 
 - COMSOL `.mph` model files.
 - Full raw COMSOL model files and bulky rendered frame sequences.
-- Very large raw prediction arrays and redundant rendered figure archives.
+- Very large raw prediction arrays, selected checkpoints, and redundant rendered figure archives.
 - Bulky time-evolution frame sequences.
 - Cache files, backup files, and internal working notes.
 
-The raw public benchmark data should be downloaded through the two benchmark text files under `data/`. The additional revision-experiment data package is documented in `data/revision_added_experiment_data_google_drive.txt`.
+The raw public benchmark data should be downloaded through the two benchmark text files under `data/`. The additional revision-experiment data package is documented in `data/revision_added_experiment_data_google_drive.txt` and contains larger machine-readable records for the baseline, probe-density, residual/temporal/spectral, computational-cost, and related revision checks.
 
 ## Interpretation Boundary
 
@@ -33,5 +32,4 @@ The COMSOL long-window follow-up is independent evidence for the revision respon
 
 ## Reproducibility Note
 
-Some scripts depend on local data paths or server-side raw arrays that are not included in the lightweight package. The compact outputs, manifests, and external data-package record are provided so the reported revision evidence can be traced without turning the repository itself into a raw-data dump.
-
+Some scripts depend on local data paths or server-side raw arrays that are not included directly in the lightweight package. The compact outputs, manifests, and external data-package record are provided so the reported revision evidence can be traced without turning the repository itself into a raw-data dump.

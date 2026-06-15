@@ -1,4 +1,4 @@
-﻿# MI-PINN for Sparse PIV Reconstruction and Short-Horizon Extrapolation
+# MI-PINN for Sparse PIV Reconstruction and Short-Horizon Extrapolation
 
 This repository contains the code, compact result artifacts, and supplementary evidence for the revised manuscript:
 
@@ -18,16 +18,15 @@ The independent COMSOL long-window experiment is included as supplementary revis
 .
 |-- src/
 |   |-- mipinn/                     # MI-PINN/PINN implementation and evaluation utilities
-|   |-- baselines/                  # Public PINN-LSTM and GRU/TCN baseline scripts
-|   |-- revision_studies/           # Probe-density and pseudo-label ablation scripts
-|   `-- comsol_followup/            # COMSOL long-window export/training scripts
+|   `-- baselines/                  # Public PINN-LSTM and GRU/TCN baseline scripts
 |-- data/
 |   |-- single_cylinder_google_drive.txt
 |   |-- three_cylinder_google_drive.txt
 |   `-- revision_added_experiment_data_google_drive.txt
 |-- results/
-|   |-- main_benchmark/             # Main benchmark metrics and histories
-|   `-- revision_studies/           # Baselines, ablations, diagnostics, COMSOL follow-up
+|   `-- revision_studies/
+|       |-- comsol_long_window/      # Compact independent long-window evidence
+|       `-- pseudo_label_ablation/   # Compact strict ablation summary
 |-- supplementary/
 |   `-- comsol_long_window/         # Supplementary PDF, LaTeX source, figure, and scripts
 |-- docs/                           # Evidence map and data-boundary notes
@@ -46,14 +45,18 @@ The machine-readable data package for the additional revision experiments is tra
 
 - `data/revision_added_experiment_data_google_drive.txt`
 
-## Key Result Folders
+## Direct Repository Evidence
 
-- `results/main_benchmark/`: summary metrics for the reported single-cylinder and three-cylinder benchmark.
-- `results/revision_studies/baselines/`: PINN-LSTM, GRU, and TCN comparison artifacts.
-- `results/revision_studies/probe_density/`: 500/1000/2000/4000 probe-density sensitivity results.
-- `results/revision_studies/pseudo_label_ablation/`: no-pseudo-label ablation results.
-- `results/revision_studies/physical_diagnostics/`: residual, temporal, and spectral diagnostic figures and CSV files.
-- `results/revision_studies/comsol_long_window/`: independent COMSOL long-window diagnostics and formal MI-PINN/PINN runs.
+- `src/mipinn/`: MI-PINN/PINN implementation and configuration files.
+- `src/baselines/`: public PINN-LSTM and GRU/TCN baseline scripts.
+- `results/revision_studies/comsol_long_window/`: independent COMSOL long-window diagnostics and formal MI-PINN/PINN summary outputs.
+- `results/revision_studies/pseudo_label_ablation/`: compact no-pseudo-label ablation summary.
+- `supplementary/comsol_long_window/`: supplementary PDF, LaTeX source, scripts, and figure for the independent long-window evidence.
+- `manifests/artifact_manifest.csv`: file-level SHA256 manifest for the lightweight GitHub package.
+
+## Revision Data Package
+
+Additional machine-readable revision artifacts are stored in the Google Drive package linked in `data/revision_added_experiment_data_google_drive.txt`. This package contains the larger benchmark and revision-evidence records, including baseline outputs, probe-density sensitivity, residual/temporal/spectral diagnostics, computational-cost records, selected checkpoints, logs, and summary tables.
 
 ## Installation
 
@@ -71,5 +74,4 @@ The file manifest is recorded in `manifests/artifact_manifest.csv`. See `docs/da
 
 ## Revision Evidence
 
-The evidence used to support the revision response is indexed in `docs/evidence_map.md`. The evidence is organized by result type rather than by internal working package, so the repository remains readable as a public project.
-
+The evidence used to support the revision response is indexed in `docs/evidence_map.md`. The evidence is organized by direct GitHub artifacts and linked revision-data artifacts, so the repository remains readable as a public project without becoming a raw-data dump.
