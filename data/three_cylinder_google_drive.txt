@@ -1,0 +1,7 @@
+Three-cylinder benchmark raw data
+
+Google Drive:
+https://drive.google.com/file/d/121x0kjem4Ly5s3v_9qnWRNWbZdbAzFcW/view?usp=sharing
+
+Note:
+The raw public benchmark data are not stored directly in this lightweight GitHub repository. Download the archive from the link above before running the full training or evaluation workflow.

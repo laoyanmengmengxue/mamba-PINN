@@ -1,0 +1,16 @@
+Revision-added experiment data package
+
+Google Drive:
+https://drive.google.com/file/d/1ft-_f8dLuBBu9u0Uuk3uTL5O3jcNCdQR/view?usp=sharing
+
+Local package prepared for upload:
+revision_added_experiment_data_package_20260615.zip
+
+Local SHA256:
+11D5E6E1BE41E8A8FA422A3C8E3BA77F5C05EB55561808FD4E8DD5F8382C9F20
+
+Package contents:
+Machine-readable revision experiment artifacts, including CSV summaries, NPZ/NPY/PKL arrays, selected PT/PTH checkpoints, scripts, logs, manifests, and package-level documentation. Rendered PNG/PDF/SVG figures are excluded from this data-only package because they are either included in the lightweight repository where needed or can be regenerated from the included data and scripts.
+
+Upload note:
+The link above points to the uploaded revision-added experiment data package.

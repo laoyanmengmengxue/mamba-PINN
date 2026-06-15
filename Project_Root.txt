@@ -1,8 +1,0 @@
-Project_Root/
-├── mainsigle.py
-│── Triple data     
-├── Single data
-├── figure 
-├── requirements.txt      
-├── .gitignore            
-└── README.md            

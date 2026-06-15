@@ -68,7 +68,7 @@ args = parse_args()
 
 # 创建带时间戳的输出目录
 current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_base_dir = "E:/yzy/pivresult1"
+output_base_dir = os.environ.get("MIPINN_OUTPUT_DIR", os.path.join(".", "outputs", "mipinn"))
 timestamped_dir = f"2d_pinn_results_{current_time}"
 args.outdir = os.path.join(output_base_dir, timestamped_dir)
 
@@ -321,7 +321,7 @@ def create_2d_mesh_points():
     x_min, x_max = config.X_MIN, config.PLANE_SIZE_X
     y_min, y_max = config.Y_MIN, config.PLANE_SIZE_Y
     
-    # 生成统一的点集，不区分内部点和边界点
+    # Generate a unified point set without separating interior and boundary points.
     n_total = args.Nci  # 总点数由配置决定
     
     # 生成均匀分布的点
@@ -2757,4 +2757,3 @@ if __name__ == "__main__":
     print(f"  - training_history.pkl")
     print(f"  - final_model.pth")
     print("="*60)
-

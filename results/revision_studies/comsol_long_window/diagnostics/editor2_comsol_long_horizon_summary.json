@@ -1,0 +1,100 @@
+﻿{
+    "single":  {
+                   "case":  "single",
+                   "model":  "models/single_cylinder_re100_shedding_probe_hr.mph",
+                   "time_count":  1601,
+                   "time_start":  0.0,
+                   "time_end":  80.0,
+                   "dt_median":  0.04999999999999982,
+                   "mesh_points":  4050,
+                   "probes":  [
+                                  {
+                                      "id":  "Q1",
+                                      "x":  2.0,
+                                      "y":  0.0
+                                  },
+                                  {
+                                      "id":  "Q2",
+                                      "x":  4.0,
+                                      "y":  0.75
+                                  },
+                                  {
+                                      "id":  "Q3",
+                                      "x":  6.0,
+                                      "y":  -0.75
+                                  },
+                                  {
+                                      "id":  "Q4",
+                                      "x":  8.0,
+                                      "y":  0.0
+                                  },
+                                  {
+                                      "id":  "Q5",
+                                      "x":  10.0,
+                                      "y":  1.0
+                                  },
+                                  {
+                                      "id":  "Q6",
+                                      "x":  12.0,
+                                      "y":  -1.0
+                                  }
+                              ],
+                   "stable_window":  [
+                                         20.0,
+                                         80.0
+                                     ],
+                   "dominant_frequency_mean_hz":  0.16652789342215768,
+                   "dominant_frequency_std_hz":  0.0,
+                   "dominant_amplitude_mean_v":  0.3238085075874388,
+                   "high_frequency_energy_ratio_mean":  0.006530725358381517
+               },
+    "three":  {
+                  "case":  "three",
+                  "model":  "models/three_cylinder_re100_shedding_probe_hr.mph",
+                  "time_count":  1601,
+                  "time_start":  0.0,
+                  "time_end":  80.0,
+                  "dt_median":  0.04999999999999982,
+                  "mesh_points":  5179,
+                  "probes":  [
+                                 {
+                                     "id":  "Q1",
+                                     "x":  4.0,
+                                     "y":  0.0
+                                 },
+                                 {
+                                     "id":  "Q2",
+                                     "x":  6.0,
+                                     "y":  1.0
+                                 },
+                                 {
+                                     "id":  "Q3",
+                                     "x":  8.0,
+                                     "y":  -1.0
+                                 },
+                                 {
+                                     "id":  "Q4",
+                                     "x":  10.0,
+                                     "y":  0.5
+                                 },
+                                 {
+                                     "id":  "Q5",
+                                     "x":  12.0,
+                                     "y":  -0.5
+                                 },
+                                 {
+                                     "id":  "Q6",
+                                     "x":  14.0,
+                                     "y":  0.0
+                                 }
+                             ],
+                  "stable_window":  [
+                                        20.0,
+                                        80.0
+                                    ],
+                  "dominant_frequency_mean_hz":  0.1859561476547427,
+                  "dominant_frequency_std_hz":  0.011443534903185934,
+                  "dominant_amplitude_mean_v":  0.3231979266368219,
+                  "high_frequency_energy_ratio_mean":  0.008403084048812405
+              }
+}

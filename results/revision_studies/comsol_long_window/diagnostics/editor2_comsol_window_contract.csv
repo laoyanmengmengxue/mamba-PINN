@@ -1,0 +1,7 @@
+case,observation_window,extrapolation_window,observation_duration_s,extrapolation_duration_s,horizon_ratio,cycles_covered_mean,dominant_frequency_mean_hz,dominant_frequency_std_hz,dataset_status
+single,60.0-65.0,65.0-67.0,5.0,2.0,0.4,0.33305578684431536,0.16652789342215768,0.0,independent_COMSOL_generated_case_not_public_dataset_extension
+single,60.0-65.0,65.0-70.0,5.0,5.0,1.0,0.8326394671107884,0.16652789342215768,0.0,independent_COMSOL_generated_case_not_public_dataset_extension
+single,60.0-65.0,65.0-75.0,5.0,10.0,2.0,1.6652789342215768,0.16652789342215768,0.0,independent_COMSOL_generated_case_not_public_dataset_extension
+three,60.0-65.0,65.0-67.0,5.0,2.0,0.4,0.3719122953094854,0.1859561476547427,0.011443534903185934,independent_COMSOL_generated_case_not_public_dataset_extension
+three,60.0-65.0,65.0-70.0,5.0,5.0,1.0,0.9297807382737134,0.1859561476547427,0.011443534903185934,independent_COMSOL_generated_case_not_public_dataset_extension
+three,60.0-65.0,65.0-75.0,5.0,10.0,2.0,1.8595614765474269,0.1859561476547427,0.011443534903185934,independent_COMSOL_generated_case_not_public_dataset_extension

@@ -1,0 +1,7 @@
+Single-cylinder benchmark raw data
+
+Google Drive:
+https://drive.google.com/file/d/1OsfiFM0mc6ab7w1YyOklvtNO4Q_YEU42/view?usp=sharing
+
+Note:
+The raw public benchmark data are not stored directly in this lightweight GitHub repository. Download the archive from the link above before running the full training or evaluation workflow.
